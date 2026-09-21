@@ -1,0 +1,18 @@
+/* New CSS for the inner pages */
+        .page-header { text-align: center; margin-bottom: 4rem; }
+        .page-title { font-size: 3rem; color: var(--accent-color); font-weight: 700; margin-bottom: 1rem; }
+        .page-subtitle { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; width: 100%; }
+        .card { background-color: var(--box-bg); padding: 2rem; border-radius: 12px; border-top: 3px solid transparent; transition: border-color 0.3s, transform 0.3s; }
+        .card:hover { border-color: var(--accent-color); transform: translateY(-5px); }
+        .card h3 { color: var(--text-main); font-size: 1.4rem; margin-bottom: 1rem; }
+        .card p { color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem; }
+        
+        .tag { background: #333; color: var(--text-main); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem; display: inline-block; margin-bottom: 0.5rem;}
+        
+        /* Contact Form */
+        .contact-form { max-width: 600px; margin: 0 auto; background: var(--box-bg); padding: 3rem; border-radius: 12px; }
+        .input-group { margin-bottom: 1.5rem; }
+        .input-group input, .input-group textarea { width: 100%; padding: 1rem; background: #121212; border: 1px solid #333; border-radius: 5px; color: #fff; font-family: 'Inter', sans-serif; }
+        .input-group input:focus, .input-group textarea:focus { outline: none; border-color: var(--accent-color); }

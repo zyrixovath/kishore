@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams | Kishore S</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --bg-color: #121212; --accent-color: #ff7b00; --text-main: #ffffff; --text-muted: #a0a0a0; --box-bg: #1e1e1e; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); min-height: 100vh; display: flex; justify-content: center; }
+        .container { width: 100%; max-width: 1200px; padding: 2rem; display: flex; flex-direction: column; }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0 4rem 0; }
+        .logo { color: var(--accent-color); font-size: 1.5rem; font-weight: 700; letter-spacing: 1px; }
+        .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+        .nav-links li a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
+        .nav-links li a:hover, .nav-links li a.active { color: var(--accent-color); }
+        .nav-btn { background-color: var(--accent-color); color: #000; padding: 0.6rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: opacity 0.3s; }
+        .nav-btn:hover { opacity: 0.9; }
+
+        .page-content { flex-grow: 1; }
+        .page-header { text-align: center; margin-bottom: 4rem; }
+        .page-title { font-size: 3rem; color: var(--accent-color); font-weight: 700; margin-bottom: 1rem; }
+        .page-subtitle { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; width: 100%; }
+        .card { background-color: var(--box-bg); padding: 2rem; border-radius: 12px; border-top: 3px solid transparent; transition: border-color 0.3s, transform 0.3s; }
+        .card:hover { border-color: var(--accent-color); transform: translateY(-5px); }
+        .card h3 { color: var(--text-main); font-size: 1.4rem; margin-bottom: 1rem; }
+        .card p { color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem; }
+        
+        .tag { background: #333; color: var(--text-main); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem; display: inline-block; margin-bottom: 0.5rem;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">KISHORE</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="teams.html" class="active">Teams</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+            <a href="contact.html" class="nav-btn">Connect</a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="page-content">
+            <div class="page-header">
+                <h1 class="page-title">Core Teams</h1>
+                <p class="page-subtitle">Selective commitments. I don't collect certificates; I focus on real engineering work.</p>
+            </div>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Team Vitaksh</h3>
+                    <p><strong>Subsystem:</strong> Avionics — Sensors & Instrumentation.</p>
+                    <p>The VIT Bhopal student satellite team. I joined because I want to work on actual spacecraft that fly, focusing on sensors, signal conditioning, ADC/DAC, microcontrollers, and data acquisition.</p>
+                    <div><span class="tag">Spacecraft</span><span class="tag">Avionics</span></div>
+                </div>
+                <div class="card">
+                    <h3>Team Vortex</h3>
+                    <p><strong>Focus:</strong> Aircraft & Aerodynamics.</p>
+                    <p>Gaining hands-on practical aerospace engineering experience. This team allows me to bridge the gap between theoretical aerodynamics and actual aircraft mechanics.</p>
+                    <div><span class="tag">Aircraft</span><span class="tag">Aerodynamics</span></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
