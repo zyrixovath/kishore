@@ -16,3 +16,5 @@
         .input-group { margin-bottom: 1.5rem; }
         .input-group input, .input-group textarea { width: 100%; padding: 1rem; background: #121212; border: 1px solid #333; border-radius: 5px; color: #fff; font-family: 'Inter', sans-serif; }
         .input-group input:focus, .input-group textarea:focus { outline: none; border-color: var(--accent-color); }
+
+        

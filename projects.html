@@ -61,10 +61,26 @@
         .page-subtitle { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
         
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; width: 100%; }
-        .card { background-color: var(--box-bg); padding: 2rem; border-radius: 12px; border-top: 3px solid transparent; transition: border-color 0.3s, transform 0.3s; }
+        .card { background-color: var(--box-bg); padding: 2rem; border-radius: 12px; border-top: 3px solid transparent; transition: border-color 0.3s, transform 0.3s; display: flex; flex-direction: column; }
         .card:hover { border-color: var(--accent-color); transform: translateY(-5px); }
-        .card h3 { color: var(--text-main); font-size: 1.4rem; margin-bottom: 1rem; }
-        .card p { color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem; }
+        
+        /* Image & Link Styles for the Cards */
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border: 1px solid #333;
+            transition: opacity 0.3s;
+        }
+        
+        .card a { text-decoration: none; }
+        .card a:hover img { opacity: 0.8; } /* Slight fade on image when hovered */
+        .card a:hover h3 { color: var(--accent-color); } /* Title turns orange on hover */
+
+        .card h3 { color: var(--text-main); font-size: 1.4rem; margin-bottom: 1rem; transition: color 0.3s; }
+        .card p { color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem; flex-grow: 1; }
         
         .tag { background: #333; color: var(--text-main); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem; display: inline-block; margin-bottom: 0.5rem;}
     </style>
@@ -82,7 +98,7 @@
                 <li><a href="teams.html">Teams</a></li>
                 <li><a href="contact.html">Contact me</a></li>
             </ul>
-            <a href="contact.html" class="nav-btn">Connect</a>
+            <a href="connect.html" class="nav-btn">Connect</a>
         </nav>
 
         <!-- Main Content for Projects -->
@@ -93,22 +109,37 @@
             </div>
             
             <div class="grid">
+                <!-- AirWise Card -->
                 <div class="card">
-                    <h3>AirWise AI</h3>
+                    <!-- The target="_blank" makes it open in a new tab -->
+                    <a href="https://overnight-hackathon-southern-singam.vercel.app/" target="_blank">
+                        <img src="airwise.png" alt="AirWise AI Dashboard">
+                        <h3>AirWise AI</h3>
+                    </a>
                     <p>An AI-powered environmental advisory web application. It takes real-time weather and AQI (PM2.5/PM10) data and maps it to a personal profile to generate personalized advisories. Built during an overnight hackathon.</p>
                     <div>
                         <span class="tag">JavaScript</span><span class="tag">AI API</span><span class="tag">Frontend</span>
                     </div>
                 </div>
+
+                <!-- SDC Card -->
                 <div class="card">
-                    <h3>SDC Project</h3>
+                    <a href="https://zyrixovath.github.io/SDC_project" target="_blank">
+                        <img src="sdc.png" alt="SDC Project Prototype">
+                        <h3>SDC Project</h3>
+                    </a>
                     <p>A competitive engineering project that successfully advanced to Round 3 of the SDC selections. Focused on delivering a working prototype with a clean UI and functional architecture.</p>
                     <div>
                         <span class="tag">Prototyping</span><span class="tag">Web Dev</span>
                     </div>
                 </div>
+
+                <!-- Farmlens Card -->
                 <div class="card">
-                    <h3>Farmlens</h3>
+                    <a href="https://zyrixovath.github.io/SDC_project" target="_blank">
+                        <img src="farmlens.png" alt="Farmlens UI">
+                        <h3>Farmlens</h3>
+                    </a>
                     <p>A technical personal project blending software solutions with practical applications. Currently in the development pipeline to demonstrate real-world impact.</p>
                     <div>
                         <span class="tag">HTML/CSS</span><span class="tag">UI/UX</span>
