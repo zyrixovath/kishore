@@ -30,7 +30,7 @@
         .page-subtitle { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
         
         /* Contact Cards Grid */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; width: 100%; max-width: 1000px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; width: 100%; max-width: 800px; margin: 0 auto; }
         .card { background-color: var(--box-bg); padding: 2.5rem 2rem; border-radius: 12px; border-top: 3px solid transparent; transition: border-color 0.3s, transform 0.3s; text-align: center; }
         .card:hover { border-color: var(--accent-color); transform: translateY(-5px); }
         
@@ -38,6 +38,13 @@
         .card h3 { color: var(--text-main); font-size: 1.4rem; margin-bottom: 0.5rem; }
         .card p, .card a { color: var(--text-muted); line-height: 1.6; font-size: 1rem; text-decoration: none; transition: color 0.3s;}
         .card a:hover { color: var(--accent-color); }
+        
+        .fab.fa-instagram, .fab.fa-linkedin, .fab.fa-github
+        {
+            vertical-align: middle;
+            padding-top: 12px;
+            margin-bottom: 14px;
+        }
 
         /* Social links layout inside the card */
         .social-group { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem; }
@@ -72,11 +79,11 @@
                     <h3>Email</h3><br>
                     
                     <!-- This div forces everything inside it to the left -->
-                    <div style="text-align: left; margin-top: 1.5rem;">
-                        <span style="color: var(--accent-color); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Personal</span>
+                    <div style="text-align: left; margin-top: 1.5rem; margin-left: 1.5rem; ">
+                        <span style="color: var(--accent-color); font-size: 1.0rem; font-weight: 700; text-transform: uppercase; text-align: left;">Personal</span>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zyrixovath@gmail.com&su=Hello Kishore" style="display: block; margin-bottom: 1rem;">zyrixovath@gmail.com</a>
                         
-                        <span style="color: var(--accent-color); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Official</span>
+                        <span style="color: var(--accent-color); font-size: 1.0rem; font-weight: 700; text-transform: uppercase;">Official</span>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kishore.26bas10001@vitbhoapl.ac.in&su=Hello Kishore" style="display: block;">kishore.26bas10001<br>@vitbhopal.ac.in</a>
                     </div>
                 </div>
@@ -84,11 +91,11 @@
                 <!-- Socials Card -->
                 <div class="card">
                     <i class="fas fa-hashtag"></i>
-                    <h3>Socials</h3>
+                    <h3 style="margin-bottom:20px;">Socials</h3>
                     <div class="social-group">
                     
-                        <a href="https://instagram.com/zyrixovath" target="_blank"><i class="fab fa-instagram"></i> @zyrixovath</a>
-                        <a href="https://linkedin.com/in/kishore773" target="_blank"><i class="fab fa-linkedin"></i> kishore773</a>
+                        <a class="instagram" href="https://instagram.com/zyrixovath" target="_blank"><i class="fab fa-instagram"></i> @zyrixovath</a>
+                        <a class="linkedin" href="https://linkedin.com/in/kishore773" target="_blank"><i class="fab fa-linkedin"></i> kishore773</a>
                         <a href="https://github.com/zyrixovath" target="_blank"><i class="fab fa-github"></i> zyrixovath</a>
                     </div>
                 </div>
